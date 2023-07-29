@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "cpu_image_url_1",
+      "name": "Intel Core i9-9900K",
+      "category": "CPU / Processor",
+      "price": 349.99,
+      "status": "In Stock",
+      "rating": 4.2
+    },
+    {
+      "id": 2,
+      "image": "motherboard_image_url_1",
+      "name": "ASUS ROG Strix Z390-E",
+      "category": "Motherboard",
+      "price": 199.99,
+      "status": "In Stock",
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "image": "ram_image_url_1",
+      "name": "Corsair Vengeance LPX 16GB",
+      "category": "RAM",
+      "price": 89.99,
+      "status": "In Stock",
+      "rating": 4.9
+    },
+    {
+      "id": 4,
+      "image": "psu_image_url_1",
+      "name": "EVGA Supernova 750 G3",
+      "category": "Power Supply Unit",
+      "price": 129.99,
+      "status": "In Stock",
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "image": "storage_image_url_1",
+      "name": "Samsung 970 EVO 1TB NVMe SSD",
+      "category": "Storage Device",
+      "price": 179.99,
+      "status": "In Stock",
+      "rating": 4.8
+    },
+    {
+      "id": 6,
+      "image": "monitor_image_url_1",
+      "name": "Dell S2719DGF 27\" QHD Monitor",
+      "category": "Monitor",
+      "price": 349.99,
+      "status": "Out of Stock",
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "image": "others_image_url_1",
+      "name": "Logitech G Pro Mechanical Keyboard",
+      "category": "Others",
+      "price": 119.99,
+      "status": "In Stock",
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "image": "cpu_image_url_2",
+      "name": "AMD Ryzen 7 5800X",
+      "category": "CPU / Processor",
+      "price": 379.99,
+      "status": "In Stock",
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "image": "motherboard_image_url_2",
+      "name": "GIGABYTE B550 AORUS Pro",
+      "category": "Motherboard",
+      "price": 179.99,
+      "status": "In Stock",
+      "rating": 5
+    },
+    {
+      "id": 10,
+      "image": "ram_image_url_2",
+      "name": "G.Skill Trident Z RGB 32GB",
+      "category": "RAM",
+      "price": 159.99,
+      "status": "In Stock",
+      "rating": 4
+    },
+    {
+      "id": 11,
+      "image": "psu_image_url_2",
+      "name": "Seasonic Focus GX-850",
+      "category": "Power Supply Unit",
+      "price": 139.99,
+      "status": "In Stock",
+      "rating": 3
+    },
+    {
+      "id": 12,
+      "image": "storage_image_url_2",
+      "name": "Western Digital Blue 2TB HDD",
+      "category": "Storage Device",
+      "price": 69.99,
+      "status": "In Stock",
+      "rating": 5
+    },
+    {
+      "id": 13,
+      "image": "monitor_image_url_2",
+      "name": "LG 34GN850-B 34\" Ultrawide Monitor",
+      "category": "Monitor",
+      "price": 899.99,
+      "status": "In Stock",
+      "rating": 5
+    },
+    {
+      "id": 14,
+      "image": "others_image_url_2",
+      "name": "Razer DeathAdder Elite Gaming Mouse",
+      "category": "Others",
+      "price": 49.99,
+      "status": "Out of Stock",
+      "rating": 4
+    },
+    {
+      "id": 15,
+      "image": "cpu_image_url_3",
+      "name": "Intel Core i5-11600K",
+      "category": "CPU / Processor",
+      "price": 259.99,
+      "status": "In Stock",
+      "rating": 4
+    },
+    {
+      "id": 16,
+      "image": "motherboard_image_url_3",
+      "name": "MSI MAG B560M Mortar",
+      "category": "Motherboard",
+      "price": 149.99,
+      "status": "In Stock",
+      "rating": 4.5
+    }
+  ]
+}

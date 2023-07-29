@@ -3,9 +3,9 @@ import Navbar from "../shared/Navbar";
 
 const RootLayout = ({ children }) => {
   return (
-    <div className="w-full">
+    <div>
       <Navbar />
-      <div className="h-screen">{children}</div>
+      <div>{children}</div>
       <Footer />
     </div>
   );
