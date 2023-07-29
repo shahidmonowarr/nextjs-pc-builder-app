@@ -1,26 +1,7 @@
 import Link from "next/link";
 
 const Product = ({ product }) => {
-  const fullStars = Math.floor(product?.rating);
-  const hasHalfStar = product?.rating % 1 !== 0;
   return (
-    //   <div className="card w-96 glass">
-    //     <figure>
-    //       <Image
-    //         src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-    //         alt="car!"
-    //         height={200}
-    //         width={300}
-    //       />
-    //     </figure>
-    //     <div className="card-body">
-    //       <h2 className="card-title">Life hack</h2>
-    //       <p>How to park your car at your garage?</p>
-    //       <div className="card-actions justify-end">
-    //         <button className="btn btn-primary">Learn now!</button>
-    //       </div>
-    //     </div>
-    //   </div>
     <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
       <Link
         href=""
