@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Product = ({ product }) => {
@@ -8,9 +9,11 @@ const Product = ({ product }) => {
         className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden"
       >
         <div className="relative pb-48 overflow-hidden">
-          <img
+          <Image
             className="absolute inset-0 h-full w-full object-cover"
             src={product?.image}
+            height={200}
+            width={200}
             alt=""
           />
         </div>
@@ -19,10 +22,6 @@ const Product = ({ product }) => {
             {product?.status}
           </span>
           <h2 className="mt-2 mb-2  font-bold">{product?.name}</h2>
-          <p className="text-sm">
-            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
-            ullamcorper nulla non metus auctor fringilla.
-          </p>
           <div className="mt-3 flex items-center">
             <span className="font-bold text-xl">{product?.price}</span>&nbsp;
             <span className="text-md font-semibold">$</span>
