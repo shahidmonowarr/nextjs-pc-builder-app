@@ -1,9 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
+import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
+  const { data: session } = useSession();
+  console.log(session);
   return (
     <div className=" bg-base-200">
       <div className="navbar container mx-auto">
@@ -103,7 +106,15 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          {session?.user ? (
+            <button onClick={() => signOut()} className="btn btn-error">
+              Logout
+            </button>
+          ) : (
+            <Link href="/login" className="btn">
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </div>
