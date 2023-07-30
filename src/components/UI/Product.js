@@ -10,28 +10,28 @@ const Product = ({ product }) => {
       >
         <div className="relative pb-48 overflow-hidden">
           <Image
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute h-full w-full"
             src={product?.image}
             height={200}
             width={200}
             alt=""
           />
         </div>
-        <div className="p-4">
-          <span className="inline-block px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">
-            {product?.status}
-          </span>
-          <h2 className="mt-2 mb-2  font-bold">{product?.name}</h2>
-          <div className="mt-3 flex items-center">
-            <span className="font-bold text-xl">{product?.price}</span>&nbsp;
-            <span className="text-md font-semibold">$</span>
-          </div>
-        </div>
-        <div className="p-4 border-t border-b text-xs text-gray-700">
-          <span className="flex items-center">
+        <div className="p-3 text-xs text-gray-700 flex items-center">
+          <span className="flex items-center pr-2">
             <i className="far fa-address-card fa-fw text-gray-900 mr-2"></i>{" "}
             {product?.category}
           </span>
+          <span className="inline-block px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">
+            {product?.status}
+          </span>
+        </div>
+        <div className="p-4 border-t border-b">
+          <h2 className="mb-2 text-lg uppercase font-bold">{product?.name}</h2>
+          <div className="mt-2 flex items-center">
+            <span className="font-bold">{product?.price}</span>&nbsp;
+            <span className="text-md font-semibold">$</span>
+          </div>
         </div>
         <div className="p-4 flex items-center text-sm text-gray-600">
           {Array.from({ length: 5 }).map((_, index) => (

@@ -37,27 +37,27 @@ const Navbar = () => {
               </li>
               <li>
                 <summary>Categories</summary>
-                <ul className="p-2">
+                <ul className="p-2 bg-white">
                   <li>
-                    <a>CPU</a>
+                    <Link href="/cpu">CPU</Link>
                   </li>
                   <li>
-                    <a>Motherboard</a>
+                    <Link href="/motherboard">Motherboard</Link>
                   </li>
                   <li>
-                    <a>RAM</a>
+                    <Link href="/ram">RAM</Link>
                   </li>
                   <li>
-                    <a>Power Supply Unit</a>
+                    <Link href="/powerSupplyUnit">Power Supply Unit</Link>
                   </li>
                   <li>
-                    <a>Storage Device</a>
+                    <Link href="/storageDevice">Storage Device</Link>
                   </li>
                   <li>
-                    <a>Monitor</a>
+                    <Link href="/monitor">Monitor</Link>
                   </li>
                   <li>
-                    <a>Others</a>
+                    <Link href="/others">Others</Link>
                   </li>
                 </ul>
               </li>
@@ -78,27 +78,27 @@ const Navbar = () => {
             <li tabIndex={0}>
               <details>
                 <summary>Categories</summary>
-                <ul className="p-2">
+                <ul className="p-2 bg-white z-10 absolute group-hover:block">
                   <li>
-                    <a>CPU</a>
+                    <Link href="/cpu">CPU</Link>
                   </li>
                   <li>
-                    <a>Motherboard</a>
+                    <Link href="/motherboard">Motherboard</Link>
                   </li>
                   <li>
-                    <a>RAM</a>
+                    <Link href="/ram">RAM</Link>
                   </li>
                   <li>
-                    <a>Power Supply Unit</a>
+                    <Link href="/powerSupplyUnit">Power Supply Unit</Link>
                   </li>
                   <li>
-                    <a>Storage Device</a>
+                    <Link href="/storageDevice">Storage Device</Link>
                   </li>
                   <li>
-                    <a>Monitor</a>
+                    <Link href="/monitor">Monitor</Link>
                   </li>
                   <li>
-                    <a>Others</a>
+                    <Link href="/others">Others</Link>
                   </li>
                 </ul>
               </details>
