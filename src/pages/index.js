@@ -9,7 +9,7 @@ const HomePage = ({ products }) => {
   const uniqueCategories = [...new Set(allCategories)];
 
   // Step 2: Create a list of featured categories (limit to 6 unique categories)
-  const featuredCategories = uniqueCategories.slice(0, 6);
+  const featuredCategories = uniqueCategories.slice(0, 7);
   console.log(featuredCategories);
   return (
     <div>
