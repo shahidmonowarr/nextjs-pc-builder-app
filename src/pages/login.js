@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+import RootLayout from "@/components/Layouts/RootLayout";
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 import logo from "../assets/images/logo.png";
@@ -75,3 +77,7 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
+LoginPage.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};
