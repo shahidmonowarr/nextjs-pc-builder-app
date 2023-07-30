@@ -2,9 +2,17 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import FeaturedCategory from "@/components/UI/FeaturedCategory";
 import Product from "@/components/UI/Product";
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 const HomePage = ({ products }) => {
   // console.log(products);
-  const featuredProducts = products?.slice(0, 6);
+  const featuredProducts = shuffleArray(products?.slice(0, 6));
   const allCategories = products?.map((product) => product.category) || [];
   const uniqueCategories = [...new Set(allCategories)];
 
@@ -32,6 +40,7 @@ const HomePage = ({ products }) => {
                   key={categoryData.category}
                   name={categoryData.category}
                   image={categoryData.image}
+                  link={categoryData.link}
                 />
               );
             }

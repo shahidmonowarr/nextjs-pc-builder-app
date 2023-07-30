@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const FeaturedCategory = ({ name, image }) => {
+const FeaturedCategory = ({ name, image, link }) => {
   return (
     <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-3">
       <Link
-        href=""
+        href={link}
         className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden"
       >
         <div className="relative pb-48 overflow-hidden">
