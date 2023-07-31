@@ -25,7 +25,7 @@ PowerSupplyUnit.getLayout = function getLayout(page) {
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    "http://localhost:5000/products?category=Power%20Supply%20Unit"
+    "https://pc-builder-server-black.vercel.app/products?category=Power%20Supply%20Unit"
   );
   const data = await res.json();
 
