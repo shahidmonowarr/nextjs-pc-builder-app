@@ -23,12 +23,17 @@ const HomePage = ({ products }) => {
     <div>
       <h1 className="text-center">Home Page</h1>
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold mb-2">Featured Products</h1>
+        <h1 className="font-bold text-2xl uppercase text-center py-4">
+          Featured Products
+        </h1>
         <div className="flex flex-wrap mx-3">
           {featuredProducts.map((product) => (
             <Product key={product.id} product={product} />
           ))}
         </div>
+        <h1 className="font-bold text-2xl uppercase text-center py-4">
+          Featured Categories
+        </h1>
         <div className="flex flex-wrap mx-3">
           {featuredCategories.map((category) => {
             const categoryData = products.find(

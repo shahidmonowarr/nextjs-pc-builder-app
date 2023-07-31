@@ -15,12 +15,12 @@ const categories = [
   { name: "RAM", value: "RAM", icon: <BsMemory /> },
   {
     name: "Power Supply Unit",
-    value: "Power-Supply-Unit",
+    value: "Power Supply Unit",
     icon: <LiaCarBatterySolid />,
   },
   {
     name: "Storage Device",
-    value: "Storage-Device",
+    value: "Storage Device",
     icon: <MdOutlineSdStorage />,
   },
   { name: "Monitor", value: "Monitor", icon: <TbHeartRateMonitor /> },

@@ -6,7 +6,7 @@ const FeaturedCategory = ({ name, image, link }) => {
     <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-3">
       <Link
         href={link}
-        className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden"
+        className="c-card block bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden"
       >
         <div className="relative pb-48 overflow-hidden">
           <Image
@@ -17,7 +17,7 @@ const FeaturedCategory = ({ name, image, link }) => {
             alt=""
           />
         </div>
-        <div className="p-4 flex items-center">
+        <div className="p-4 flex items-center bg-base-200">
           <h2 className="mt-2 mb-2 text-base uppercase font-bold">{name}</h2>
           <button
             href=""
