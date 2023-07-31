@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Slider from "react-slick";
 
 const Banner = () => {
@@ -51,17 +52,17 @@ const Banner = () => {
             />
             <div className="h-full w-full rounded-xl absolute top-0 bottom-0 md:pt-[30%] pt-[10%] pl-[5%] ">
               <h4 className="capitalize text-sm leading-[24px] tracking-[.3px] mb-[6px] text-[#38b5fe] ">
-                A trusted online shop
+                A trusted online platform
               </h4>
               <h4 className="text-3xl md:leading-[34px] leading-[35px] tracking-[.2px] uppercase font-medium text-white mb-4">
                 All in one place
               </h4>
-              <button
-                type="submit"
-                className="rounded-md px-5 py-1 text-sm text-black bg-[#eaedee] uppercase"
+              <Link
+                href="/pcbuilder"
+                className="rounded-md btn px-5 py-1 text-sm cursor-pointer text-black bg-[#eaedee] uppercase"
               >
-                Shop Now
-              </button>
+                Build Now
+              </Link>
             </div>
           </div>
           <div className="slider relative">
@@ -84,8 +85,8 @@ const Banner = () => {
           </div>
         </Slider>
       </div>
-      <div className="right_banner md:gap-[30px] gap-[10px] md:w-[30%] w-full flex flex-col">
-        <div className="side_banner w-full relative">
+      <div className="md:gap-[30px] gap-[10px] md:w-[30%] w-full flex flex-col">
+        <div className="w-full relative">
           <Image
             className="w-full md:h-[200px] h-[160px] rounded-xl object-fill"
             src="https://i.ibb.co/RpTSj1M/gradient-view-illuminated-neon-gaming-desk-setup-with-keyboard.jpg"
@@ -94,7 +95,7 @@ const Banner = () => {
             width={1000}
           />
         </div>
-        <div className="side_banner w-full relative">
+        <div className="w-full relative">
           <Image
             className="w-full md:h-[200px] h-[160px] rounded-xl object-fill"
             src="https://i.ibb.co/ByN2Cn8/music-arrangement-with-black-headphones.jpg"
