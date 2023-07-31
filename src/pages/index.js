@@ -1,4 +1,5 @@
 import RootLayout from "@/components/Layouts/RootLayout";
+import Banner from "@/components/UI/Banner";
 import FeaturedCategory from "@/components/UI/FeaturedCategory";
 import Product from "@/components/UI/Product";
 
@@ -21,7 +22,7 @@ const HomePage = ({ products }) => {
   console.log(featuredCategories);
   return (
     <div>
-      <h1 className="text-center">Home Page</h1>
+      <Banner />
       <div className="container mx-auto">
         <h1 className="font-bold text-2xl uppercase text-center py-4">
           Featured Products
