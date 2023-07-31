@@ -14,7 +14,6 @@ const SelectProduct = ({ product }) => {
 
   const { selectedItems } = useSelector((state) => state.selectComponent);
   const selected = selectedItems?.find((item) => item._id === product._id);
-  console.log(selected);
 
   const outOfStock = product?.status === "Out of Stock";
 

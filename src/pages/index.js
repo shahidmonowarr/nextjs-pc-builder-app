@@ -12,14 +12,12 @@ function shuffleArray(array) {
 }
 
 const HomePage = ({ products }) => {
-  // console.log(products);
   const featuredProducts = shuffleArray(products?.slice(0, 6));
   const allCategories = products?.map((product) => product.category) || [];
   const uniqueCategories = [...new Set(allCategories)];
 
   // Step 2: Create a list of featured categories (limit to 6 unique categories)
   const featuredCategories = uniqueCategories.slice(0, 7);
-  console.log(featuredCategories);
   return (
     <div>
       <Banner />
@@ -70,7 +68,6 @@ export const getStaticProps = async () => {
     "https://pc-builder-server-black.vercel.app/products"
   );
   const data = await res.json();
-  // console.log(data);
 
   return {
     props: {

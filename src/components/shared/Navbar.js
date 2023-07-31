@@ -7,7 +7,6 @@ import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const { data: session } = useSession();
-  console.log(session?.user?.name);
   return (
     <div className=" bg-base-200">
       <div className="navbar container mx-auto">
@@ -34,7 +33,7 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>PC Builder</a>
+                <Link href="/pcbuilder">Pc Builder</Link>
               </li>
               <li>
                 <summary>Categories</summary>
