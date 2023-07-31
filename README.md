@@ -1,38 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Live Site Link: https://pc-builder-orpin.vercel.app/
 
-## Getting Started
+### Live Server Link: https://pc-builder-server-black.vercel.app/products
 
-First, run the development server:
+### GitHub Client Repo: https://github.com/shahidmonowarr/nextjs-pc-builder-app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### GitHub Server Repo: https://github.com/shahidmonowarr/nextjs-pc-builder-server
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<hr>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Project Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<hr>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<ul>
+    <li>User can login with github authentication system</li>
+    <li>In PC Builder page user can select pc parts and build a PC</li>
+    <li>Site is responsive for desktop & mobile device</li>
+    <li>State management by react redux</li>
+</ul>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Instructions to run the project
 
-## Learn More
+<hr>
 
-To learn more about Next.js, take a look at the following resources:
+Pre requirement - Must have nodejs install in your system
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<ol>
+    <li>First clone both client and server project from github</li>
+    <li>Install all dependencies for both project by - npm install</li>
+    <li>After installing all dependencies create a .env file in both project</li>
+    <li>Copy all data from .env.example file and paste it in .env file</li>
+    <li>Start both project by - npm run dev</li>
+</ol>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Client .env example:-
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- GITHUB_ID=replace_by_your_credentials
+- GITHUB_SECRET=replace_by_your_credentials
+- NEXTAUTH_SECRET=replace_by_your_credentials
+- NEXTAUTH_URL=local_site_url/production_site_url
