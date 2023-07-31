@@ -6,7 +6,7 @@ const Product = ({ product }) => {
     <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
       <Link
         href={`/product/${product?._id}`}
-        className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden h-full"
+        className="c-card block shadow-md hover:shadow-xl rounded-lg overflow-hidden h-full bg-base-200"
       >
         <div className="relative pb-48 overflow-hidden">
           <Image
@@ -17,12 +17,11 @@ const Product = ({ product }) => {
             alt=""
           />
         </div>
-        <div className="p-3 text-xs text-gray-700 flex items-center">
-          <span className="flex items-center pr-2">
-            <i className="far fa-address-card fa-fw text-gray-900 mr-2"></i>{" "}
+        <div className="p-3 text-xs text-gray-700 flex justify-between items-center">
+          <span className="text-left pr-2 badge badge-secondary">
             {product?.category}
           </span>
-          <span className="inline-block px-2 py-1 leading-none bg-orange-200 text-orange-800 rounded-full font-semibold uppercase tracking-wide text-xs">
+          <span className="text-right badge badge-sm badge-success">
             {product?.status}
           </span>
         </div>

@@ -45,36 +45,37 @@ const PCBuilderPage = () => {
       <Head>
         <title>PC Builder</title>
       </Head>
-      <div className="min-h-[60vh] px-2 mt-8">
-        <div className="border-2 border-gray-500 md:w-3/4 mx-auto">
-          <div className="flex flex-row justify-center items-center px-3 w-full h-16 bg-slate-300 ">
-            <h2 className="font-bold text-xl text-center">
-              Build Your PC Here 🖥️
-            </h2>
-          </div>
+      <div className="min-h-[60vh] px-2 my-8 ">
+        <h1 className="font-bold text-2xl uppercase text-center py-4">
+          Build Your PC Here
+        </h1>
+        <div className="border-2 border-gray-500 md:w-2/4 mx-auto">
           <div className="p-5">
             {categories.map((category) => (
               <PCComponent key={category?.name} category={category} />
             ))}
-            <div className="mt-4 flex justify-between items-center">
-              <p className="font-semibold text-xl">Total Price: </p>
-              <p className="font-bold text-xl">$ {totalPrice}</p>
+            <div className="mt-4 flex justify-between items-center border-t-2 border-gray-500 mx-5">
+              <div className="mt-4">
+                <button
+                  onClick={onCompleteSubmit}
+                  disabled={selectedItems?.length <= 2}
+                  className="btn  btn-outline btn-success"
+                >
+                  Complete Build
+                </button>
+                {selectedItems?.length <= 2 && (
+                  <p className="text-error text-sm">
+                    Please select at least 3 components
+                  </p>
+                )}
+              </div>
+              <div>
+                <p className="font-semibold text-xl">
+                  Total Price: $ {totalPrice}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="text-center mt-4 mb-8">
-          <button
-            onClick={onCompleteSubmit}
-            disabled={selectedItems?.length < 5}
-            className="btn  btn-outline btn-success"
-          >
-            Complete Build
-          </button>
-          {selectedItems?.length <= 2 && (
-            <p className="text-error text-sm">
-              Please select atleast 3 components
-            </p>
-          )}
         </div>
       </div>
     </>

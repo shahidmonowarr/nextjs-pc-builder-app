@@ -8,8 +8,11 @@ const PCComponent = ({ category }) => {
     (item) => item.category === category.value
   );
   return (
-    <div key={category.name} className="flex items-center gap-5">
-      <div className="bg-sky-200 p-2 rounded">
+    <div
+      key={category.name}
+      className="flex items-center gap-5 border-2 rounded-md border-gray-500 m-3 p-3"
+    >
+      <div className="p-2">
         <div className="text-2xl text-sky-900">{category?.icon}</div>
       </div>
       <div className="flex-grow">

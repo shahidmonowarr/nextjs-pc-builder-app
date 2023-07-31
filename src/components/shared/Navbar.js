@@ -74,7 +74,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>PC Builder</a>
+              <Link href="/pcbuilder">Pc Builder</Link>
             </li>
             <li tabIndex={0}>
               <details>
