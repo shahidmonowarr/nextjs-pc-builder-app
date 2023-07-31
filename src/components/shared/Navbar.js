@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import { signOut, useSession } from "next-auth/react";
 import Image from "next/image";
@@ -6,7 +7,7 @@ import logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const { data: session } = useSession();
-  console.log(session);
+  console.log(session?.user?.name);
   return (
     <div className=" bg-base-200">
       <div className="navbar container mx-auto">
@@ -106,15 +107,42 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          {session?.user ? (
-            <button onClick={() => signOut()} className="btn btn-error">
-              Logout
-            </button>
-          ) : (
-            <Link href="/login" className="btn">
-              Login
-            </Link>
-          )}
+          <div className="dropdown dropdown-end">
+            <label
+              tabIndex={0}
+              className="btn btn-ghost btn-circle avatar tooltip tooltip-left tooltip-sm"
+              data-tip={session?.user?.name}
+            >
+              <div className="w-10 rounded-full ">
+                <img src="https://user-images.githubusercontent.com/522079/90506845-e8420580-e122-11ea-82ca-31087fc8486c.png" />
+              </div>
+            </label>
+            <ul
+              tabIndex={0}
+              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a className="justify-between">
+                  Profile
+                  <span className="badge">New</span>
+                </a>
+              </li>
+              <li>
+                <a>Settings</a>
+              </li>
+              <li>
+                {session?.user ? (
+                  <button onClick={() => signOut()} className="">
+                    Logout
+                  </button>
+                ) : (
+                  <Link href="/login" className="btn">
+                    Login
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
